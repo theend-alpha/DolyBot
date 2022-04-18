@@ -5,11 +5,11 @@ _python_() {
     python3${pVer%.*} -c "$1"
 }
 
-_HELLBOT_MAIN() {
+_DOLYBOT_MAIN() {
     $(_python_ 'from git import Repo
 import sys
 
-_UPSTREAM_ = "https://github.com/The-Hellbot/HellBot"
+_UPSTREAM_ = "https://github.com/theend-alpha/DolyBot"
 _BRANCH_ = "master"
 
 repo = Repo.init()
@@ -19,18 +19,18 @@ repo.create_head(_BRANCH_, origin.refs[_BRANCH_])
 repo.heads[_BRANCH_].checkout(True) ')
 }
 
-_hell_repo () {
+_doly_repo () {
     local hrepo
     hrepo=`echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZS1IZWxsQm90L1BsdWdpbnM=" | base64 -d`
     echo "$rlink"
 }
 
-_hell_zip () {
+_doly_zip () {
     echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZS1IZWxsQm90L1BsdWdpbnMvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
 }
 
-_HELLBOT_PLUG() {
-    local hrepo=$(_hell_repo)
+_DOLYBOT_PLUG() {
+    local hrepo=$(_doly_repo)
     $(_python_ 'from git import Repo
 import sys
 _UPSTREAM_ = "'$hrepo'"
@@ -43,19 +43,19 @@ repo.heads[_BRANCH_].checkout(True) ')
 }
 
 _starter () {
-    local hellpath
-    hellpath="Plugins.zip"
-    echo "••• DOWNLOADING HELLBOT •••"
-    wget -q $(_hell_zip) -O "$hellpath"
-    HELLPATH=$(zipinfo -1 "$hellpath" | grep -v "/.");
-    unzip -qq "$hellpath"
-    rm -rf "$hellpath"
-    # _HELLBOT_MAIN
-    cd $HELLPATH
-    # _HELLBOT_PLUG
+    local dolypath
+    dolypath="Plugins.zip"
+    echo "••• DOWNLOADING DOLYBOT •••"
+    wget -q $(_doly_zip) -O "$dolypath"
+    DOLYPATH=$(zipinfo -1 "$dolypath" | grep -v "/.");
+    unzip -qq "$dolypath"
+    rm -rf "$dolypath"
+    # _DOLYBOT_MAIN
+    cd $DOLYPATH
+    # _DOLYBOT_PLUG
     python3 ../setup/updater.py ../requirements.txt requirements.txt
-    echo "••• STARTING HELLBOT •••"
-    python3 -m hellbot
+    echo "••• STARTING DOLYBOT •••"
+    python3 -m dolybot
 }
 
 _starter
