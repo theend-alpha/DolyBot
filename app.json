@@ -7,11 +7,11 @@
     "userbot",
     "plugin",
     "telethon",
-    "hellbot",
+    "dolybot",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/The-HellBot/HellBot/",
+  "repository": "https://github.com/theend-alpha/DolyBot/",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
