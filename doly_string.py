@@ -8,8 +8,8 @@ from telethon.sync import TelegramClient
 
 print("•••   HELLBOT  SESSION  GENERATOR   •••")
 print("\nHello!! Welcome to HellBot Session Generator\n")
-okvai = input("Enter 69 to continue: ")
-if okvai == "69":
+okvai = input("Enter 16 to continue: ")
+if okvai == "16":
     print("Choose the string session type: \n1. HellBot \n2. Music Bot")
     library = input("\nYour Choice: ")
     if library == "1":
@@ -29,4 +29,4 @@ if okvai == "69":
     else:
         print("Please Enter 1 or 2 only.")
 else:
-    print("Bhag jaa bhosdike")
+    print("Bhag jao vmro")
