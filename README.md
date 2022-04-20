@@ -51,7 +51,7 @@
 
 - Clone the repo. 
 
-`git clone https://github.com/The-HellBot/Plugins.git`
+`git clone https://github.com/theend-alpha/Plugins.git`
 - Open Cloned Folder.
 
 `cd Plugins`
@@ -63,9 +63,9 @@
 - Install Requirements.
 
 `pip install -U -r requirements.txt`
-- Generate HELLBOT SESSION.
+- Generate DOLYBOT SESSION.
 
-`python hell_string.py`
+`python doly_string.py`
 - Create config.py or rename ex_config.py to config.py. Fill All The Required Variables.
 - Finally Start Hêllẞø† By
 
