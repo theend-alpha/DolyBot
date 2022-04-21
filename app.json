@@ -34,8 +34,8 @@
       "description": "Get this value from my.telegram.org",
       "value": ""
     },
-    "HELLBOT_SESSION": {
-      "description": "Get this value by using repl or termux. Refer to Repo for more info.",
+    "DOLYBOT_SESSION": {
+      "description": "Get this value by using [ENDBOT](https://t.me/endstringbot).",
       "value": ""
     },
     "HEROKU_API_KEY": {
