@@ -30,44 +30,11 @@
 - [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ------
-## Deploy on Railway
-- Get all the necessary variables and deploy on railway.
-- Every mandatory variables are listed [Here](#Variables).
-- Fork & Star this repo.
-- Some commands might not work properly on railway.
-- Due to railway's privacy policy I removed railway button from repo. But you can get deploy guide in our [@HellBot_Chat](https://t.me/hellbot_chat). Type `#railway` to get deploy guide.
-
-------
-## Deploy Locally
-
-- Clone the repo. 
-
-`git clone https://github.com/theend-alpha/Plugins.git`
-- Open Cloned Folder.
-
-`cd Plugins`
-- Create VirtualEnv.
-
-`virtualenv -p /usr/bin/python3 venv`
-
-`. ./venv/bin/activate`
-- Install Requirements.
-
-`pip install -U -r requirements.txt`
-- Generate DOLYBOT SESSION.
-
-`python doly_string.py`
-- Create config.py or rename ex_config.py to config.py. Fill All The Required Variables.
-- Finally Start Hêllẞø† By
-
-`bash start.sh`
-
-------
 ## Variables
 
 - `APP_ID`  =  Get this value from my.telegram.org
 - `API_HASH`  =  Get this value from my.telegram.org
-- `HELLBOT_SESSION`  =  Get this by using [EndString](https://t.me/EndStringBot)
+- `DOLYBOT_SESSION`  =  Get this by using [EndString](https://t.me/EndStringBot)
 - `BOT_TOKEN`  =  Make A Bot From [@BotFather](https://t.me/botfather) and paste it's token.
 - `HANDLER`  =  Your command handler.
 - `DATABASE_URL`  =  A Postgresql database url.
@@ -76,16 +43,6 @@
 ## DolyBot Session
 
  Get it from [ENDBOT](https://t.me/endstringbot)
-### Terminal
-- Open the terminal.
-- Paste this code.
-
-`pkg install python wget -y && pip install telethon && wget https://raw.githubusercontent.com/The-HellBot/HellBot/master/hell_string.py && python3 hell_string.py`
-- Fill API ID, API HASH, Phone number (with country code).
-- Paste the OTP received on Telegram.
-- If You have Enabled 2-Step Verification then fill your password.
-- Note that Termux Doesn't show passwords when filled. Just paste your password and hit enter.
-- Your HellBot Session Will be saved in your Telegram Saved Message.
 
 ------
 ## Disclaimer
