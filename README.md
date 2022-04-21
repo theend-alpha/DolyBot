@@ -73,19 +73,9 @@
 - `DATABASE_URL`  =  A Postgresql database url.
 
 ------
-## HellBot Session
+## DolyBot Session
 
-### Repl
-- Open Repl Link.
-- Click on Green Play Button.
-- Wait for requirements to finish.
-- Fill API ID, API HASH, Phone number (with country code).
-- Paste the OTP received on Telegram.
-- If You have Enabled 2-Step Verification then fill your password.
-- Your HellBot Session Will be saved in your Telegram Saved Message.
-- There's a bug in repl which prints your input twice or more. You need to long tap and paste the required information in repl.
-- [![Replit](https://telegra.ph/file/68aacf214a17e366d9b60.jpg)](https://replit.com/@TheHellBot/HellBot?v=1)
-
+ Get it from [ENDBOT](https://t.me/endstringbot)
 ### Terminal
 - Open the terminal.
 - Paste this code.
